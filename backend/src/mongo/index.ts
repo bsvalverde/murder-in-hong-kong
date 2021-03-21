@@ -1,3 +1,4 @@
+import MongoStore from 'connect-mongo';
 import mongoose from 'mongoose';
 
 export default {
@@ -9,5 +10,10 @@ export default {
   },
   disconnect() {
     mongoose.disconnect();
+  },
+  getStore() {
+    return new MongoStore({
+      client: mongoose.connection.getClient(),
+    });
   },
 };
