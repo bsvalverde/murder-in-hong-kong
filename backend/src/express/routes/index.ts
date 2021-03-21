@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import authRoutes from './auth';
-import gameRoutes from './games';
+import gameRoutes from './game';
 import userRoutes from './user';
 
 const routes = (): Router => {

@@ -5,8 +5,6 @@ interface UserServiceConstructor {
   store: UserStore;
 }
 
-export const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
-
 export default class UserService {
   private store: UserStore;
 
