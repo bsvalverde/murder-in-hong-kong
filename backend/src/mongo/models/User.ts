@@ -9,7 +9,7 @@ interface UserModel extends User, Document {
 }
 
 const userSchema = new BaseSchema({
-  city: {
+  username: {
     ...trimmedString,
     required: true,
     minlength: 6,

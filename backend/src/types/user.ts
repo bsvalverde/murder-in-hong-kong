@@ -9,5 +9,6 @@ export interface UserInput {
 }
 
 export interface UserStore {
-  create: (input: UserInput) => Promise<User | null>;
+  findByUsername: (username: string) => Promise<User | null>;
+  create: (input: UserInput) => Promise<User>;
 }
