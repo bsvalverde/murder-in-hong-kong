@@ -3,7 +3,7 @@ import formats from './formats';
 import getLocale from './getLocale';
 import messages from './messages';
 
-const defaultLanguages = ['pt'];
+const defaultLanguages = ['en'];
 
 function getLocalizedObject(object: any, locale: any, depth = 0) {
   return Object.keys(object).reduce((localized: any, key) => {
